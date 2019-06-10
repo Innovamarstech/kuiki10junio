@@ -1,0 +1,212 @@
+{% extends "inicio/inicio.html" %}
+
+{% block contenu %}
+<form action="#" method="post">
+    <div class="form-group row">
+        <label for="company" class="col-sm-2 col-form-label">Empresa</label>
+        <div class="col-sm-10">
+            <input type="text" class="form-control" id="company"
+            required="required"  title="Required name company" placeholder="Nombre de la empresa"  
+            name="company" value={{contact.company}} >
+            
+        </div>
+    </div>
+    <div class="form-group row">
+        <label for="phone" class="col-sm-2 col-form-label">Telefono</label>
+        <div class="col-sm-10">
+            <input type="number" class="form-control" id="nom" 
+            required="required"  title="Required phone company" placeholder="550 1000 0000"  name="phone" value={{contact.phone}}>
+        </div>
+    </div>
+    <div class="form-group row">
+        <label for="mail" class="col-sm-2 col-form-label">Mail</label>
+        <div class="col-sm-10">
+            <input type="email" class="form-control" id="mail" 
+            required="required"  title="Required email company" placeholder="email@company.com"  name="mail" value={{contact.mail}}>
+        </div>
+    </div>
+    <div class="form-group row">
+        <label for="adress" class="col-sm-2 col-form-label">Direccion</label>
+        <div class="col-sm-10">
+            <input type="text" class="form-control" id="adress" 
+             title="Adress company" placeholder="25 street califonia"  name="adress" value={{contact.adress}}>
+        </div>
+    </div>
+    <div class="form-group row">
+        <label for="city" class="col-sm-2 col-form-label">Ciudad</label>
+        <div class="col-sm-10">
+            <input type="text" class="form-control" id="city" 
+            required="required"  title="Required city company" placeholder="City Alajuela"  name="city" value={{contact.city}}>
+        </div>
+    </div>
+    <div class="form-group row">
+        <label for="country" class="col-sm-2 col-form-label">Pais</label>
+        <div class="col-sm-10">
+            <input type="text" class="form-control" id="country" 
+            required="required" title="Required country company" placeholder="Costa Rica"  name="country" value={{contact.country}}>
+        </div>
+    </div>
+    <div class="form-group row">
+        <label for="website" class="col-sm-2 col-form-label">Website</label>
+        <div class="col-sm-10">
+            <input type="url" class="form-control" id="website" 
+            title="Website company" placeholder="https://company.com"  name="website" value={{contact.website}}>
+        </div>
+    </div>
+    <div class="form-group row">
+            <label for="industry" class="col-sm-2 col-form-label">Industria</label>
+            <div class="col-sm-10">
+                
+                <select type="text" class="form-control" id="industry" 
+                required="required"   title="Required select industry company" name="industry" value={{contact.industry}}>
+    
+                        <option></option>
+                        
+                        <option>Fabricacion</option>
+                        <option>Transporte</option>
+                        <option>Financiero</option>
+                        <option>Distribuidor</option>
+                        <option>Otros</option>
+
+                        
+                        
+                </select>
+            </div>
+    </div>
+    <div class="form-group row">
+        <label for="description" class="col-sm-2 col-form-label">Descripcion del producto o servicio
+        </label>
+        <div class="col-sm-10">
+            <input type="text" class="form-control" id="description" 
+            required="required"   title="Required description of product or service company"   name="description" value={{contact.description}}>
+        </div>
+    </div>
+    
+    <div class="form-group row">
+        <label for="managername" class="col-sm-2 col-form-label">Nombre del Gerente General</label>
+        <div class="col-sm-10">
+            <input type="text" class="form-control" id="managername" name="managername" value={{contact.managername}}>
+        </div>
+    </div>
+    <div class="form-group row">
+        <label for="manageremail" class="col-sm-2 col-form-label">Email Gerente General</label>
+        <div class="col-sm-10">
+            <input type="email" class="form-control" id="manageremail" name="manageremail" value={{contact.manageremail}}>
+        </div>
+    </div>
+    <div class="form-group row">
+        <label for="managerphone" class="col-sm-2 col-form-label">Telefono Gerente General</label>
+        <div class="col-sm-10">
+            <input type="number" class="form-control" id="managerphone" name="managerphone" value={{contact.managerphone}}>
+        </div>
+    </div>
+    <div class="form-group row">
+        <label for="calidadname" class="col-sm-2 col-form-label">Nombre Gerente de calidad</label>
+        <div class="col-sm-10">
+            <input type="text" class="form-control" id="calidadname" name="calidadname" value={{contact.calidadname}}>
+        </div>
+    </div>
+    <div class="form-group row">
+        <label for="calidademail" class="col-sm-2 col-form-label">Email Gerente de calidad</label>
+        <div class="col-sm-10">
+            <input type="email" class="form-control" id="calidademail" name="calidademail" value={{contact.calidademail}}>
+        </div>
+    </div>
+    <div class="form-group row">
+        <label for="calidadphone" class="col-sm-2 col-form-label">Telefono Gerente de calidad</label>
+        <div class="col-sm-10">
+            <input type="number" class="form-control" id="calidadphone" name="calidadphone" value={{contact.calidadphone}}>
+        </div>
+    </div>
+    <div class="form-group row">
+        <label for="finanzasname" class="col-sm-2 col-form-label">Nombre Gerente financiero</label>
+        <div class="col-sm-10">
+            <input type="text" class="form-control" id="finanzasname" name="finanzasname" value={{contact.finanzasname}}>
+        </div>
+    </div>
+    <div class="form-group row">
+        <label for="finanzasemail" class="col-sm-2 col-form-label">Email Gerente financiero</label>
+        <div class="col-sm-10">
+            <input type="email" class="form-control" id="finanzasemail" name="finanzasemail" value={{contact.finanzasemail}}>
+        </div>
+    </div>
+    <div class="form-group row">
+        <label for="finanzasphone" class="col-sm-2 col-form-label">Telefono Gerente financiero</label>
+        <div class="col-sm-10">
+            <input type="number" class="form-control" id="finanzasphone" name="finanzasphone" value={{contact.finanzasphone}}>
+        </div>
+    </div>
+    <div class="form-group row">
+        <label for="salename" class="col-sm-2 col-form-label">Nombre Encargado de ventas</label>
+        <div class="col-sm-10">
+            <input type="text" class="form-control" id="salename" required="required"  name="salename" value={{contact.salename}}>
+        </div>
+    </div>
+    <div class="form-group row">
+        <label for="saleemail" class="col-sm-2 col-form-label">Email Encargado de ventas</label>
+        <div class="col-sm-10">
+            <input type="email" class="form-control" id="saleemail" required="required"  name="saleemail" value={{contact.saleemail}}>
+        </div>
+    </div>
+    <div class="form-group row">
+        <label for="salephone" class="col-sm-2 col-form-label">Telefono Encargado de ventas</label>
+        <div class="col-sm-10">
+            <input type="number" class="form-control" id="salephone" required="required"  name="salephone" value={{contact.salephone}}>
+        </div>
+    </div>
+    <div class="form-group row">
+        <label for="cuentaname" class="col-sm-2 col-form-label">Informacion para pagos 
+            Nombre de la cuenta:
+        </label>
+        <div class="col-sm-10">
+            <input type="text" class="form-control" id="cuentaname" name="cuentaname" value={{contact.cuentaname}}>
+        </div>
+    </div>
+    <div class="form-group row">
+        <label for="cuentaswift" class="col-sm-2 col-form-label">Swift:
+        </label>
+        <div class="col-sm-10">
+            <input type="text" class="form-control" id="cuentaswift" name="cuentaswift" value={{contact.cuentaswift}}>
+        </div>
+    </div>
+    <div class="form-group row">
+        <label for="cuentaaba" class="col-sm-2 col-form-label">IBAN / Cuenta cliente: 
+        </label>
+        <div class="col-sm-10">
+            <input type="text" class="form-control" id="cuentaaba" name="cuentaaba" value={{contact.cuentaaba}}>
+        </div>
+    </div>
+    <div class="form-group row">
+        <label for="cuentanumber" class="col-sm-2 col-form-label">Numero de cuenta:
+        </label>
+        <div class="col-sm-10">
+            <input type="text" class="form-control" id="cuentanumber" name="cuentanumber" value={{contact.cuentanumber}}>
+        </div>
+    </div>
+    <div class="form-group row">
+        <label for="cuentabanco" class="col-sm-2 col-form-label">Nombre del banco: 
+        </label>
+        <div class="col-sm-10">
+            <input type="text" class="form-control" id="cuentabanco" name="cuentabanco" value={{contact.cuentabanco}}>
+        </div>
+    </div>
+    <div class="form-group row">
+        <label for="cuentaaddress" class="col-sm-2 col-form-label">Direccion fisica del banco:
+        </label>
+        <div class="col-sm-10">
+            <input type="text" class="form-control" id="cuentaaddress" name="cuentaaddress" value={{contact.cuentaaddress}}>
+        </div>
+    </div>
+
+    <br></br>
+    
+
+
+  <button type="submit" class="btn btn-secondary"  value="Submit">Aceptar</button>
+
+  <button type="reset" class="btn btn-secondary">Cancelar</button>
+
+</form>
+{% endblock %}
+
+

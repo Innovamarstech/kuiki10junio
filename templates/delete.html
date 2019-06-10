@@ -1,0 +1,12 @@
+{% extends "frontend/frontend.html" %}
+
+{% block titre %}Suppression d'un contact{% endblock %}
+
+{% block contenu %}
+
+Esta seguro de eliminar este proveedor: {{contact.nom}} {{contact.prenom}} ?
+<br></br>
+<form method="post">
+    <button type="submit" class="btn btn-danger"  value="Submit">Eliminar</button>
+</form>
+{% endblock %}

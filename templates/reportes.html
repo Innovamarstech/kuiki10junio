@@ -1,0 +1,24 @@
+{%  extends 'frontend/frontend.html' %}
+
+{%  block content  %}
+
+<h1>
+        {% for palabra in contact_list.upper().split():   %}
+        
+          {{ conteo = {} }}
+          {% conteo.setdefault(palabra, 0) %}
+          {% conteo[palabra] = conteo[palabra] + 1 %}
+     
+          {% conteoEnOrden = collections.Counter(conteo) %}
+     
+          {{ pprint.pprint(conteoEnOrden.most_common()) }}
+          
+        {% endfor %}
+  
+    
+    
+         
+  </h1>
+
+
+{%  endblock  %}

@@ -1,0 +1,104 @@
+{% extends "inicio/inicio.html" %}
+
+{% block titre %}
+<style type="text/css">
+    .boton_personalizado{
+      text-decoration: none;
+      padding: 10px;
+      font-weight: 600;
+      font-size: 20px;
+      color: #ffffff;
+      background-color: #1883ba;
+      border-radius: 6px;
+      border: 2px solid #0016b0;
+    }
+    .boton_personalizado:hover{
+      color: #1883ba;
+      background-color: #ffffff;
+    }
+</style>
+
+
+
+{% endblock %}
+{% block contenu %}
+
+<head>
+<meta charset=utf-8 />
+
+<style>
+body{
+  background: lightgray;
+}
+#wrap{
+  margin: 0 auto;
+  width: 500px;
+}
+details{
+  border: 1px solid #CC0;
+  padding: 5px;
+  font-family: Arial;
+  margin-bottom:5px;
+  width:500px;
+  background-color: #EEE;
+}
+summary{
+  font-weight: bold;
+  color: SteelBlue;
+  font-size: 12px;
+  cursor: pointer;
+}
+p, a, span{
+  font-size: 12px;
+  color: #666;
+}
+details summary::-webkit-details-marker {
+  color: #CC0;
+}
+h2{
+  color: black;
+  font-size: 40px;
+  font-family: Helvetica;
+  text-align: center;
+}
+#logo{
+  background: SteelBlue url() no-repeat;
+  background-position: 0 -224px;
+  height: 62px;
+  width: 230px;
+  margin-top: 11px;
+  padding:3px;
+}
+
+</style>
+</head>
+<body>
+    <a href="{{ url_for('faq') }}"><img ALIGN="right" height="5%" width="5%" src="static/img/eng.jpg" alt="English" /></a>
+<div id="wrap">
+<h2>Preguntas frecuentes</h2>
+<details>
+   <summary>¿Porque debo llenar el formulario R-COM-03 o R-COM-22 y cuál es la diferencia entre ambos?</summary>
+   <p>Tico Electronics pone a disposición de los proveedores que quieran ser parte de nuestra cadena de valor dos tipos de formularios para que los llenen en línea y adjunten los documentos requeridos, para que nuestro personal de Aprobación de Proveedores los revise apruebe o rechace. Lo primero que debe definir el proveedor es a que Clasificación corresponde el producto que va a suplir a Tico Electronics, una vez complete este paso se desplegará el registro correspondiente, este documento recogen la información pertinente para que Tico Electronics pueda evaluar si un proveedor es aprobado o no. Es importante que toda la información sea clara y verdadera, ya que pasara por un proceso de verificación. La diferencia entre ambos es que el R-COM-03 es para proveedores críticos de la empresa, a los cuales se les requiere analizar la parte de Calidad mas a fondo; el R-COM-22 es para proveedores que no necesitan esta evaluación.</p>
+</details>
+<details>
+    <summary>¿Cuáles certificados de Sistema de Calidad son necesarios para poder entrar en la cadena de suministros de Tico Electronics?</summary>
+   <p>Para proveedores de materia prima para productos de la Industria Aeroespacial lo ideal es que el proveedor posea la Certificación AS9100, sin embargo, en muchos casos lo mínimo que se solicita es ISO 9001:2015. 
+    Para proveedores de procesos especiales es esencial que tengan certificación Nadcap para los procesos que ofrecen.
+    Proveedores de herramientas o fixtures y/o de Suministros, no requieren certificaciones.</p>
+</details>
+<details>
+   <summary>¿Qué pasa si no cuento con ningún certificado de Sistema de Calidad?</summary>
+   <div>Para Tico Electronics es muy importante que nuestros proveedores cuenten con certificados de Sistema de Calidad, sin embargo, algunas necesidades de la empresa no lo requieren, por tanto, si no lo tiene y su producto no entra en el nivel de exigencia requerido no será problema, si instamos a que nuestros proveedores tengan al menos el certificado ISO 9001 para un beneficio mutuo.</div>
+</details>
+</div>
+<br></br>
+<br></br>
+
+<center> 
+<a class="boton_personalizado" href="selecionar">Empezar ya</a>
+</center> 
+</body>
+</html>
+
+{% endblock %}
+

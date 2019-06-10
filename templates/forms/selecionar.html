@@ -1,0 +1,52 @@
+{% extends "inicio/inicio.html" %}
+
+{% block titre %}
+
+<body>
+
+<a href="{{ url_for('select') }}"><img ALIGN="right" height="5%" width="5%" src="static/img/eng.jpg" alt="English" /></a>
+<img src="static/img/logo.jpg" width="10%" height="10%">
+
+<h2>  ¿Cuál es el principal actividad economica de la empresa?</h2>   
+<h3>
+  <div class="container">
+    <ul class="nav mt-2">
+      
+        <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#">Selecionar</a>        
+        <div class="dropdown-menu">
+          <a class="dropdown-item" href="selecionar3">Servicio de Maquinado</a>
+          <a class="dropdown-item" href="selecionar22">Suministros de Producción</a>
+          <a class="dropdown-item" href="selecionar3">Servicio de Acabados</a>
+          <a class="dropdown-item" href="selecionar22">Material de Empaque</a>
+          <a class="dropdown-item" href="selecionar3">Servicio de Logistica</a>
+          <a class="dropdown-item" href="selecionar22">Equipo de Seguridad y Protección Personal</a>
+          <a class="dropdown-item" href="selecionar3">Herramientas hechas a la medida</a>
+          <a class="dropdown-item" href="selecionar22">Equipo Producción</a>
+          <a class="dropdown-item" href="selecionar3">Herramientas manual</a>
+          <a class="dropdown-item" href="selecionar22">Suministros de Oficina</a>
+          <a class="dropdown-item" href="selecionar3">Herramientas Machinning</a>
+          <a class="dropdown-item" href="selecionar22">Suministros de Limpieza y Cafeteria</a>
+          <a class="dropdown-item" href="selecionar3">Calibración</a>
+          <a class="dropdown-item" href="selecionar22">Repuestos</a>
+          <a class="dropdown-item" href="selecionar3">Materiales ESD</a>
+          <a class="dropdown-item" href="selecionar3">Quimicos</a>
+          <a class="dropdown-item" href="selecionar3">Material (MP o MI) - MW</a>
+          <a class="dropdown-item" href="selecionar3">Material (MP o MI) - LW</a>
+          <a class="dropdown-item" href="selecionar3">Material (MP o MI) - Tubing</a>
+          <a class="dropdown-item" href="selecionar3">Material (MP o MI) - Soldaduras</a>
+          <a class="dropdown-item" href="selecionar3">Material (MP o MI) - Conectores</a>
+          <a class="dropdown-item" href="selecionar3">Material (MP o MI) - Laminas</a>
+          <a class="dropdown-item" href="selecionar3">Material (MP o MI) - Bobinas</a>
+          <a class="dropdown-item" href="selecionar3">Material (MP o MI) - Componentes Electronicos</a>
+
+          <a class="dropdown-item" href="selecionar3"></a>
+
+          <a class="dropdown-item" href="selecionar22"></a>
+          
+        </div>
+      </li>
+      
+    </ul>
+  </div></h3>
+{% endblock %}

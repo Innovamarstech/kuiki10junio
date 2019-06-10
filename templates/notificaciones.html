@@ -1,0 +1,16 @@
+{% extends "frontend/frontend.html" %}
+
+{% block titre %}Mes contacts{% endblock %}
+
+{% block contenu %}
+contact = "hola"
+
+temp2='<a href="{{ url }}"> {{ enlace }}</a>'
+print(Template(temp2).render(url="http://www.flask.com",enlace="Flask"))
+
+temp3='<a href="{{ contact }}"> {{ contact }}</a>'
+print(Template(temp3).render(datos=["http://www.flask.com","Flask"]))
+
+
+
+{% endblock %}

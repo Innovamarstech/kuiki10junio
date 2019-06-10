@@ -1,0 +1,141 @@
+{% extends "frontend/frontend2.html" %}
+{% block contenu %}
+<!doctype html>
+<html>
+    <head>
+
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" >
+        <style>
+        
+        
+               
+        
+            
+        </style>
+
+    </head>
+    <body>       
+        <div class="container ">     
+            <table class="table">
+              <thead>
+                  <tr>
+                      <th scope="col">Status</th>
+                      <th scope="col">Proveedor</th>
+                      <th scope="col">Industria</th>
+                      <th scope="col">Telephone</th>
+                      <th scope="col">Mail</th>
+                      <th scope="col">Vencimiento</th>
+                      <th scope="col">Actions</th>
+                  </tr>
+              </thead>
+              <tbody>
+                  {% for contact in contact_list if contact.status == "red"   %}
+                  <tr>
+                      <td>{{contact.status}}</td>
+                      <td>{{contact.company}}</td>
+                      <td>{{contact.industry}}</td>
+                      <td>{{contact.phone}}</td>
+                      <td><a href="mailto:{{contact.mail}}">{{contact.mail}}</a></td>
+                      <td>{{contact.datevencimiento}}</td>                      
+                      <td>
+                        <a class="btn btn-outline-secondary btn-sm" href="./view1/{{contact.id}}"><i class="fa fa-eye"></i></a>  
+                        
+                      </td>
+                  </tr>
+                  {% endfor %}
+              </tbody>
+          
+          
+                
+                <tbody>
+                    {% for contact in contact_list if contact.status == "orange"   %}
+                    <tr>
+                        <td>{{contact.status}}</td>
+                        <td>{{contact.company}}</td>
+                        <td>{{contact.industry}}</td>
+                        <td>{{contact.phone}}</td>
+                        <td><a href="mailto:{{contact.mail}}">{{contact.mail}}</a></td>
+                        <td>{{contact.datevencimiento}}</td>                      
+                        <td>
+                          <a class="btn btn-outline-secondary btn-sm" href="./view1/{{contact.id}}"><i class="fa fa-eye"></i></a>  
+                         
+                        </td>
+                    </tr>
+                    {% endfor %}
+                </tbody>
+          
+           <tbody>
+               {% for contact in contact_list if contact.status == "new"   %}
+               <tr>
+                   <td>{{contact.status}}</td>
+                   <td>{{contact.company}}</td>
+                   <td>{{contact.industry}}</td>
+                   <td>{{contact.phone}}</td>
+                   <td><a href="mailto:{{contact.mail}}">{{contact.mail}}</a></td>
+                   <td>{{contact.datevencimiento}}</td>                      
+                   <td>
+                     <a class="btn btn-outline-secondary btn-sm" href="./view1/{{contact.id}}"><i class="fa fa-eye"></i></a>  
+                     
+                   </td>
+               </tr>
+               {% endfor %}
+           </tbody>
+       
+              
+              <tbody>
+                  {% for contact in contact_list if contact.status == "yellow"   %}
+                  <tr>
+                      <td>{{contact.status}}</td>
+                      <td>{{contact.company}}</td>
+                      <td>{{contact.industry}}</td>
+                      <td>{{contact.phone}}</td>
+                      <td><a href="mailto:{{contact.mail}}">{{contact.mail}}</a></td>
+                      <td>{{contact.datevencimiento}}</td>                      
+                      <td>
+                        <a class="btn btn-outline-secondary btn-sm" href="./view1/{{contact.id}}"><i class="fa fa-eye"></i></a>  
+                     
+                      </td>
+                  </tr>
+                  {% endfor %}
+              </tbody>
+       
+               
+                <tbody>
+                    {% for contact in contact_list if contact.status == "green"   %}
+                    <tr>
+                        <td>{{contact.status}}</td>
+                        <td>{{contact.company}}</td>
+                        <td>{{contact.industry}}</td>
+                        <td>{{contact.phone}}</td>
+                        <td><a href="mailto:{{contact.mail}}">{{contact.mail}}</a></td>
+                        <td>{{contact.datevencimiento}}</td>                      
+                        <td>
+                          <a class="btn btn-outline-secondary btn-sm" href="./view1/{{contact.id}}"><i class="fa fa-eye"></i></a>  
+        
+                        </td>
+                    </tr>
+                    {% endfor %}
+            </tbody>
+        </table>
+    
+        
+          
+          
+            
+        </div>
+        <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
+
+    </body>
+</html>
+
+
+
+{% endblock %}
